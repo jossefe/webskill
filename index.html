@@ -2,38 +2,21 @@
 <html lang="en">
 
 <head>
+  <title>Title</title>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Hugo 0.72.0">
-  <title>Carousel Template · Bootstrap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
 
-
-
-
-
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-
-  <!-- Custom styles for this template -->
-  <link href="carousel.css" rel="stylesheet">
 </head>
 
-
 <body>
-
   <header>
+   
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success  ">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="logos/logo.gif" alt="" class="img-fluid  " width="100"></a>
@@ -44,13 +27,26 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto mb-2 mb-md-0">
             <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <div class="dropdown">
+              <button class="btn text-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Seleccione Categoria
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Anfibios</a></li>
+                <li><a class="dropdown-item" href="#">Aves</a></li>
+                <li><a class="dropdown-item" href="#">Mamíferos</a></li>
+                <li><a class="dropdown-item" href="#">Peces</a></li>
+                <li><a class="dropdown-item" href="reptiles.html">Reptiles</a></li>
+              </ul>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link"  data-bs-toggle="modal" data-bs-target="#modalId" href="#">Registrate</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Registrate</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d" href="#">Inicia Sesión</a>
+              
+              <a class="nav-link d" data-bs-toggle="modal" data-bs-target="#modalId" href="#">Inicia Sesión</a>
             </li>
           </ul>
 
@@ -58,115 +54,179 @@
       </div>
     </nav>
   </header>
-  <div class="container mt-5">
-
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" >
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-      </ol>
-      <div class="carousel-inner">
+  <main>
+  <div class="mt-5">&nbsp;</div>
+<div class="container mt-5">
+      
+    
+<div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+        <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+        <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+        <li data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="four slide"></li>
+        <li data-bs-target="#carouselId" data-bs-slide-to="4" aria-label="five slide"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
-          <img src="carrusel/anfibios1.png" alt="" class="img-fluid">
-
-          <div class="container">
-            <div class="carousel-caption text-left">
-              
-            </div>
-          </div>
+            <img src="carrusel/anfibios1.png" class="w-100 d-block" alt="First slide">
         </div>
         <div class="carousel-item">
-          <img src="carrusel/aves1.png" alt="" class="img-fluid">
-
-          <div class="container">
-            <div class="carousel-caption">
-             
-            </div>
-          </div>
+            <img src="carrusel/aves1.png" class="w-100 d-block" alt="Second slide">
         </div>
         <div class="carousel-item">
-          <img src="carrusel/mamiferos1.png" alt="" class="img-fluid">
-
-          <div class="container">
-            <div class="carousel-caption text-right">
-              
-            </div>
-          </div>
+            <img src="carrusel/mamiferos1.png" class="w-100 d-block" alt="Third slide">
         </div>
         <div class="carousel-item">
-          <img src="carrusel/peces1.png" alt="" class="img-fluid">
-
-          <div class="container">
-            <div class="carousel-caption text-right">
-              
-            </div>
-          </div>
+            <img src="carrusel/peces1.png" class="w-100 d-block" alt="four slide">
         </div>
         <div class="carousel-item">
-          <img src="carrusel/reptiles1.png " alt="" class="img-fluid">
-
-          <div class="container">
-            <div class="carousel-caption text-right">
-              
-              
-            </div>
-          </div>
+            <img src="carrusel/reptiles1.png" class="w-100 d-block" alt="four slide">
         </div>
-      </div>
-      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-
-
-
-    <div class="container marketing">
-
-      <div class="row align-center justify-content-center">
-        <div class="col-lg-2 row ">
-         <img src="categorias/anfibios.jpeg" alt="" class="rounded-circle w-100 imf-fluid" >
-
-          <button class=" btn btn-success justify-content-center align-center ">Anfibios</button>
-        </div> 
-        <div class="col-lg-2  align-center justify-content-center ">
-          <img src="categorias/aves.jpeg" alt="" class="rounded-circle w-100 imf-fluid">
-      <button type="button" class="btn btn-success ms-5">Anfibios</button>
-        </div>
-        <div class="col-lg-2  ">
-          <img src="categorias/maniferos.jpeg" alt="" class="rounded-circle w-100 imf-fluid">
-          
-          <button></button>
-        </div>
-        <div class="col-lg-2  ">
-          <img src="categorias/peces.jpeg" alt="" class="rounded-circle w-100 imf-fluid">
-
-          <p><a class="btn btn-secondary" href="#" role="button">Peces</a></p>
-        </div>
-        <div class="col-lg-2 ">
-          <img src="categorias/reptiles.jpeg" alt="" class="rounded-circle w-100 imf-fluid">
-
-          <button></button>
-        </div>
-      </div>
-
-
-
-    </div>
-
-
-
-
+        <span class="visually-hidden">Next</span>
+    </button>
   </div>
+</div>
+
+<h1 class="text-center">Cátalogo de animales</h1>
+ <h2 class="text-center">Los otros animales de la tierra</h2>
+ <div class="container marketing">
+
+  <div class="row align-center justify-content-center">
+    <div class="col-xl-2 row p-3 align-center justify-content-center">
+     <img src="categorias/anfibios.jpeg" alt="" class="rounded-circle w-100 imf-fluid" >
+
+      <button class=" btn btn-success justify-content-center align-center m-3 ">Anfibios</button>
+    </div> 
+    <div class="col-xl-2 row  p-3 align-center justify-content-center ">
+      <img src="categorias/aves.jpeg" alt="" class="rounded-circle w-100 imf-fluid">
+      <button class=" btn btn-success justify-content-center align-center m-3  ">Aves</button>
+    </div>
+    <div class="col-xl-2 row p-3 align-center justify-content-center ">
+      <img src="categorias/maniferos.jpeg" alt="" class="rounded-circle w-100 imf-fluid">
+      <button class=" btn btn-success justify-content-center align-center m-3  ">Mamíferos</button>
+    </div>
+    <div class="col-xl-2 row p-3 align-center justify-content-center">
+      <img src="categorias/peces.jpeg" alt="" class="rounded-circle w-100 imf-fluid">
+
+      <button class=" btn btn-success justify-content-center align-center m-3 ">Peces</button>
+    </div>
+    <div class="col-xl-2 row  p-3 align-center justify-content-center">
+      <img src="categorias/reptiles.jpeg" alt="" class="rounded-circle w-100 imf-fluid">
+      <button class=" btn btn-success justify-content-center align-center m-3 ">Reptiles</button>
+    </div>
+  </div>
+  </div>
+  </main>
+ <footer class="bg-secondary">
+  <div class="container">
+  <h1 class="text-center">CLM SKILLS WEB-2021</h1>
+  <div class=" row justify-content-between">
+    <div class="col-xl-2">
+      <button type="button" class="btn btn-success">SUBIR</button>
+    </div>
+    <div class="col-xl-2">
+      <ul class="nav justify-content-center flex-colum  ">Centros partcipantes
+          <li class="nav-item">
+              <a class="nav-link text-white " href="#" >I.E.S Azarquiel</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#">I.E.S Juan Bosco</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white text-center" href="#">I.E.S Maestre de Calatrava</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#">I.E.S Virgen de García</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#">I.E.S Gabriel  Prieto</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#">I.E.S Pedro Mercedes</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white text-center " href="#">I.E.S Brianda de Mendoza</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#">I.E.S Ribera del Tajo</a>
+          </li>
+      </ul>
+      
+    </div>
+    <div class="col-xl-2">
+      
+    </div>
+    <div class="col-xl-2">
+      <ul class="nav justify-content-center flex-colum ">
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#" >Quienes somos</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#">Privacidad</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contacto</a>
+          </li>
+      </ul>
+    </div>
+    <div class="col-xl-2">
+      <button type="button" class="btn btn-success">HOME</button>
+    </div>
+  </div>
+  <div class="text-center">
+    <h5>Catálogo de animales &copy;S1DAM-S1DAW</h5>
+  </div>
+</div>
+</footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
 </body>
+<!-- Modal trigger button -->
+<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+  Launch
+</button>
+
+<!-- Modal Body1 -->
+<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+<div class="modal fade" id="modalId" tabindex="-1"  role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable  modal-sm" role="document">
+    <div class="modal-content ">
+      <div class="text-center  ">
+        <div><h2 class="modal-title bg-secondary" id="modalTitleId">INICIA SESION</h2></div>
+      </div>
+      <div class="modal-body bg-secondary p-3">
+        <div class="border border-1 p-3 bg-light">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Usuario</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+            </div>
+            <div class="">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-success w-100 mt-3"  >Save</button>
+            </form> </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!-- Optional: Place to the bottom of scripts -->
@@ -174,10 +234,39 @@
   const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
 
 </script>
+<!-- Modal Body2 -->
+<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+<div class="modal fade" id="modalId" tabindex="-1"  role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable  modal-sm" role="document">
+    <div class="modal-content ">
+      <div class="text-center  ">
+        <div><h2 class="modal-title bg-secondary" id="modalTitleId">INICIA SESION</h2></div>
+      </div>
+      <div class="modal-body bg-secondary p-3">
+        <div class="border border-1 p-3 bg-light">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Usuario</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+            </div>
+            <div class="">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-success w-100 mt-3"  >Save</button>
+            </form> </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
 
 
-<!-- FOOTER -->
-<footer class="container">
-  <p class="float-right"><a href="#">Back to top</a></p>
-  <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-</footer>
+<!-- Optional: Place to the bottom of scripts -->
+<script>
+  const myModal1 = new bootstrap.Modal(document.getElementById('modalId'), options)
+
+</script>
+
+</html>
