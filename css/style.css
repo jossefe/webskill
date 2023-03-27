@@ -1,12 +1,14 @@
 .bg-header {
-    background-color: #E5FAE9 ;
+    background-color: #88c994 ;
   }
 .bg-footer {
       background-color: #6C757C;
     }
-.bg-boton{
+.boton-verde{
     background-color: #27A844;
     border: none;
+    width: 100%;
+    color: white;
 }
 .textof{
     color: white !important;
